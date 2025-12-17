@@ -1,0 +1,15 @@
+# build artifacts
+dist/
+build/
+*.egg-info/
+
+# tox / tests caches
+.tox/
+.pytest_cache/
+
+# python caches
+__pycache__/
+*.pyc
+
+# mypy cache
+.mypy_cache/

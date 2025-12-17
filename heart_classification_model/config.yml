@@ -1,0 +1,83 @@
+package_name: heart_classification_model
+
+raw_data_file: heartDisease_dataset_TP.csv
+
+training_data_file: train.csv
+test_data_file: test.csv
+target: target
+
+pipeline_name: heart_disease_classification_model
+pipeline_save_file: heart_disease_classification_model_output_v
+
+features:
+  - age
+  - sex
+  - cp
+  - trestbps
+  - chol
+  - fbs
+  - restecg
+  - thalach
+  - exang
+  - oldpeak
+  - slope
+  - ca
+  - thal
+
+test_size: 0.25
+
+random_state: 0
+
+numerical_vars:
+  - age
+  - trestbps
+  - chol
+  - thalach
+  - oldpeak
+
+categorical_vars:
+  - thal
+  - cp
+  - slope
+  - exang
+  - ca
+  - fbs
+  - sex
+  - restecg
+
+age_vars:
+  - age
+
+chol_vars:
+  - chol
+
+trestbps_vars:
+  - trestbps
+
+thalach_vars:
+  - thalach
+
+oldpeak_vars:
+  - oldpeak
+
+iterative_imputer_vars:
+  - age
+
+simple_imputer_median_vars:
+  - trestbps
+  - oldpeak
+
+simple_imputer_most_frequent_vars:
+  - thal
+  - cp
+  - slope
+  - exang
+  - ca
+  - fbs
+  - sex
+  - restecg
+
+knn_imputer_vars:
+  - chol
+  - thalach
+
