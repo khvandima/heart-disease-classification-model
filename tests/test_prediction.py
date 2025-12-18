@@ -1,13 +1,7 @@
-import sys
-
 import numpy as np
 from sklearn.metrics import accuracy_score
 
 from heart_classification_model.predict import make_prediction
-
-sys.path.append(
-    "/Users/khvandima/Documents/Programming/KS_AI_JLR_18/ml_practice/Heart_Disease_classification/"
-)
 
 
 def test_make_prediction(sample_input_data):

@@ -1,4 +1,3 @@
-import sys
 from typing import List, Optional, Tuple
 
 import numpy as np
@@ -6,10 +5,6 @@ import pandas as pd
 from pydantic import BaseModel, ValidationError
 
 from heart_classification_model.config.core import config
-
-sys.path.append(
-    "/Users/khvandima/Documents/Programming/KS_AI_JLR_18/ml_practice/Heart_Disease_classification/"
-)
 
 
 def validate_inputs(*, input_data: pd.DataFrame) -> Tuple[pd.DataFrame, Optional[dict]]:

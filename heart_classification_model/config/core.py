@@ -1,4 +1,3 @@
-import sys
 from pathlib import Path
 from typing import Optional, Sequence
 
@@ -7,9 +6,6 @@ from strictyaml import YAML, load
 
 import heart_classification_model
 
-sys.path.append(
-    "/Users/khvandima/Documents/Programming/KS_AI_JLR_18/ml_practice/Heart_Disease_classification/"
-)
 
 PACKAGE_ROOT = Path(heart_classification_model.__file__).resolve().parent
 ROOT = PACKAGE_ROOT.parent

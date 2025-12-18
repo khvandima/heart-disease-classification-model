@@ -1,5 +1,3 @@
-import sys
-
 from sklearn.linear_model import LogisticRegression
 from sklearn.pipeline import Pipeline
 
@@ -16,9 +14,6 @@ from heart_classification_model.processing.features import (
     TrestbpsBinningTransformer,
 )
 
-sys.path.append(
-    "/Users/khvandima/Documents/Programming/KS_AI_JLR_18/ml_practice/Heart_Disease_classification/"
-)
 
 heart_pipe = Pipeline(
     steps=[

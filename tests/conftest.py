@@ -1,15 +1,10 @@
 import logging
-import sys
-
 import pytest
 from sklearn.model_selection import train_test_split
 
 from heart_classification_model.config.core import config
 from heart_classification_model.processing.data_manager import load_dataset
 
-sys.path.append(
-    "/Users/khvandima/Documents/Programming/KS_AI_JLR_18/ml_practice/Heart_Disease_classification/"
-)
 
 logger = logging.getLogger(__name__)
 

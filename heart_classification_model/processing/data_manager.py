@@ -1,5 +1,4 @@
 import logging
-import sys
 from pathlib import Path
 from typing import List
 
@@ -14,9 +13,6 @@ from heart_classification_model.config.core import (
     config,
 )
 
-sys.path.append(
-    "/Users/khvandima/Documents/Programming/KS_AI_JLR_18/ml_practice/Heart_Disease_classification/"
-)
 
 logger = logging.getLogger(__name__)
 

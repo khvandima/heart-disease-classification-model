@@ -1,4 +1,3 @@
-import sys
 import typing as t
 
 import pandas as pd
@@ -8,9 +7,6 @@ from heart_classification_model.config.core import config
 from heart_classification_model.processing.data_manager import load_pipeline
 from heart_classification_model.processing.validation import validate_inputs
 
-sys.path.append(
-    "/Users/khvandima/Documents/Programming/KS_AI_JLR_18/ml_practice/Heart_Disease_classification/"
-)
 
 pipeline_file_name = f"{config.app_config.pipeline_save_file}{_version}.pkl"
 
